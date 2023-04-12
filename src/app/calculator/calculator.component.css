@@ -1,0 +1,63 @@
+.body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  background-color: black;
+  width: 310px;
+  aspect-ratio: 9 / 13;
+  padding: 20px;
+}
+
+.display {
+  padding-right: 20px;
+  display: flex;
+  justify-content: end;
+  font-size: 50px;
+  color: white;
+}
+
+.buttons {
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button:nth-child(n) {
+  background-color: #505050;
+  color: white;
+}
+
+button:nth-child(4n),
+button:last-child {
+  background-color: #ff9500;
+  color: white;
+}
+
+button:nth-child(-n + 3) {
+  background-color: #d4d4d2;
+  color: black;
+}
+
+button {
+  border: none;
+  font-size: 35px;
+  border-radius: 65px;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+}
+
+.zero {
+  width: 140px;
+}
+
+button:hover {
+  background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+}

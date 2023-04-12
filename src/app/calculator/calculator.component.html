@@ -1,0 +1,29 @@
+
+<div className="wrapper">
+    <div className="calculator">
+        <div className="display">
+            {{display}}
+        </div>
+        <div className="buttons">
+            <button (click)="erase()">C</button>
+            <button (click)="invertNumber()">±</button>
+            <button (click)="operator('percent')">%</button>
+            <button (click)="operator('divide')">÷</button>
+            <button (click)="numberClick(7)">7</button>
+            <button (click)="numberClick(8)">8</button>
+            <button (click)="numberClick(9)">9</button>
+            <button (click)="operator('multiply')">×</button>
+            <button (click)="numberClick(4)">4</button>
+            <button (click)="numberClick(5)">5</button>
+            <button (click)="numberClick(6)">6</button>
+            <button (click)="operator('subtract')">-</button>
+            <button (click)="numberClick(1)">1</button>
+            <button (click)="numberClick(2)">2</button>
+            <button (click)="numberClick(3)">3</button>
+            <button (click)="operator('add')">+</button>
+            <button class="zero" (click)="numberClick(0)">0</button>
+            <button (click)="coma()">.</button>
+            <button (click)="calculate()">=</button>
+        </div>
+    </div>
+</div>
